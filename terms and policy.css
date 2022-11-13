@@ -1,0 +1,31 @@
+body{
+    background-color: #e1dcdc;
+
+}
+
+.termsandconditions{
+    padding: 20px;
+}
+
+.privacypolicy{
+    padding: 20px;
+}
+
+.termsandconditions h1,h2{
+    margin-top: 20px;
+}
+.termsandconditions h1{
+    margin-bottom: 10px;
+}
+
+
+.privacypolicy h1,h2{
+    margin-top: 20px;
+}
+.privacypolicy  h1{
+    margin-bottom: 10px;
+}
+
+.termsandconditions a,.privacypolicy a{
+    color: rgb(255, 0, 0);
+}

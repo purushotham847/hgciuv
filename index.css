@@ -1,0 +1,998 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+    width: 100%;
+   min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    height:70px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+
+    
+  }
+  
+  .logo a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    
+
+  }
+  .logo a img{
+margin: 5px;
+  }
+  
+  
+  .logo{
+
+    width: 50%;
+    height: 40px;
+   
+    
+  
+
+
+  }
+  
+  #container nav {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+  
+  
+  }
+  .navlist{
+    
+    width:50%;
+    height: 100%;
+ 
+
+  }
+
+
+  .navlist ul {
+  width: 100%;
+  height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+  
+  }
+
+ 
+  
+   .navlist > ul > li {
+  margin-left: 20px;
+  margin-right: 20px;
+
+    display: inline-block;
+
+  
+  }
+  
+   
+  
+  .navlist > ul > li:hover {
+    border-bottom: 2px solid white;
+    background-color: #000000;
+  }
+  
+  .navlist > ul > .dropdown:hover {
+    border-bottom: none;
+  }
+  
+  .navlist > ul > .dropdown:hover > .dd {
+    display: block;
+  }
+  
+  .dropdown:hover > a .fa-caret-down {
+    display: none;
+  }
+
+  #container a:hover{
+     color: rgb(208, 203, 203);
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navlist > ul > li > div {
+    position: absolute;
+    padding: 0 10px;
+  
+    background-color: black;
+    display: none;
+  
+    min-width: 100px;
+  }
+  
+  .navlist > ul > li > div > ul {
+    margin: 0px 0 10px 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #u_a_c {
+    position: relative;
+    width: 100%;
+  }
+  
+  .navlist > ul > li > div > ul > a >li:hover {
+    background-color: rgba(255, 255, 255, 0.242);
+  }
+  
+  .navlist > ul > li > div > ul > a > li {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .dd ul {
+    width: auto;
+    height: auto;
+   display: inline-block;
+  }
+  
+  
+  .dd ul a li {
+    padding: 20px;
+    color: white;
+  
+  
+  
+  }
+  
+
+  .indexheading {
+    color: white;
+    background-color: #000000;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    margin-right: 0px;
+  }
+
+  .indexheading span{
+    color: rgb(255, 20, 20);
+  }
+  
+  .middlecontent{
+    width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    background-color: #a7a1a14f;
+    padding-bottom: 100px;
+    
+  }
+  
+ 
+  
+  .latestindex {
+    width: 100%;
+  height: 20%;
+    justify-content: center;
+
+    display: flex;
+    font-size: large;
+  }
+  
+  .fullcards {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .cards {
+    width: 22%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+   
+    margin: 20px;
+  }
+  
+  .imgcard {
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px;
+  }
+  
+  .cards img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carddate {
+    background-color:#0000002e;
+  
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 10%;
+  }
+  
+  .carddate p {
+    padding-left: 10px;
+    font-size: 13px;
+    margin: 0;
+
+  }
+  
+  .title {
+    width: 100%;
+    height: 10%;
+    background-color:#0000002e;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding-bottom: 10px;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .cards:hover {
+border: 4px solid #0000002e; 
+    transition: 0.5s;
+  }
+  
+  .cardrow {
+    display: inline-flex;
+    width: 100%;
+  }
+  
+ 
+  
+  .middlecontent .middleimage img {
+    border-radius: 1000px;
+  }
+
+
+
+  .articles{
+    width: 100%;
+    height: auto;
+   margin-top: 40px;
+    padding-left: 50px;
+  }
+
+  .article{
+margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 100px;
+
+  }
+
+  .articleimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+ 
+  }
+  
+  .articleimg img{
+    width: 75%;
+  float: right;
+
+
+  }
+
+  .articleblog{
+   padding-left: 10px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .articleblog h3{
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  
+  }
+
+  .articleblog h5 ,.articleblog h5 a{
+color: grey;
+  }
+  
+  .footer {
+    width: 100%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-size: larger;
+    font-family: sans-serif;
+    margin-top:auto;
+    padding: 10px;
+ 
+  
+    
+  }
+  
+  .footer1 {
+    width: 100%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
+  .footerlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: medium;
+    width: 15%;
+    text-align: center;
+    height: 100%;
+ margin-left: 5px;
+  }
+  
+  .footerlogo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  
+  }
+  
+  .footerlogo a img {
+    margin-right: 5px;
+  }
+  
+  .footerlogo a h3 {
+    font-size: medium;
+  }
+  
+  .footercontent {
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+  width: 45%;
+  height: 100%;
+  padding-left: 20px;
+  text-align: center;
+  
+    
+  }
+  
+  .footercontent a {
+    text-decoration: none;
+  }
+  
+  .footersocial {
+    justify-content: center;
+    align-items: center;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+ 
+  
+  }
+  
+  .footerphone {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .footer2 {
+    width: 100%;
+    height: 20%;
+    font-size: medium;
+    text-align: right;
+    padding-top: 5px;
+  }
+  
+  .footer1 a {
+    color: white;
+    padding: 9px;
+  }
+  
+  .footer1 a:hover {
+    color: rgb(208, 203, 203);
+  }
+  
+
+
+
+/*less than 250px*/
+
+ @media screen  and (max-width:250px){
+
+
+ 
+  #container nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 8px;
+    }
+
+    .logo{
+      width: 100%;
+      height: 40px;
+      font-size: 10px;
+      padding-top: 20px;
+    }
+.logo img{
+  width: 20px;
+  height: 20px;
+}
+    
+
+    .navlist{
+   padding-top: 25px;
+   padding-bottom: 25px;
+      width: 100%;
+      height: 60%;
+    }
+.navlist ul{
+  width: 100%;
+  height: 100%;
+}
+    .navlist ul li {
+      padding: 0;
+      margin: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+.indexheading{
+  font-size: 8px;
+  height: 200px;
+  
+}
+
+
+
+.latestindex{
+  font-size: 7px;
+}
+    .cardrow{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    
+    .cards{
+      width: 90%;
+      height: 150px;
+      padding: 0;
+      margin:15px;
+    }
+
+    .cards a,.cards p {
+      font-size: 10px;
+    }
+    .articles{
+      
+      padding-left: 0;
+    }
+    
+    
+    .article{
+     width: 100%;
+      padding: 0;
+   
+    }
+    
+    .articleblog{
+      font-size: 8px;
+    margin-left: 0px;
+    margin-right: 3px;
+    
+    
+    }
+
+    .articleimg{
+      margin-right: 10px;
+    }
+    
+    .articleimg img{
+    width: 100%;
+    padding: 0;
+    }
+    
+      
+    
+    
+
+    .footer1{
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .footerlogo,.footercontent,.footersocial,.footerphone{
+      width: 100%;
+      font-size: 6px;
+      padding: 0;
+      margin: 0;
+      padding-top: 10px;
+    }
+
+    .footersocial img{
+      width: 15px;
+    
+    }
+    .footer2{
+      text-align: center;
+      font-size: 7px;
+    }
+
+.footerlogo a h3{
+  font-size: 8px;
+}
+  .footerlogo a img{
+    width: 20px;
+    height: 20px;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 450 to 700 */
+
+  @media screen  and (max-width:700px) and (min-width:450px){
+
+
+    #container nav {
+      display: flex;
+      flex-direction: column;
+      }
+
+      .logo{
+        width: 100%;
+        height: 40px;
+        font-size: medium;
+        padding-top: 20px;
+      }
+
+      
+
+      .navlist{
+     padding-top: 25px;
+     padding-bottom: 25px;
+        width: 100%;
+        height: 60%;
+      }
+.navlist ul{
+    width: 100%;
+    height: 100%;
+}
+      .navlist ul li {
+        padding: 0;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+.indexheading{
+    font-size: 17px;
+    height: 350px;
+}
+
+
+.latestindex{
+    font-size: 12px;
+}
+      .cardrow{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      
+      .cards{
+        width: 55%;
+        height: 220px;
+        padding: 0;
+        margin:15px;
+      }
+
+      .articles{
+
+        padding-left: 0;
+      }
+      
+      
+      .article{
+       width: 100%;
+        padding: 0;
+      }
+      
+      .articleblog{
+        font-size: 10px;
+      margin-left: 0px;
+      margin-right: 3px;
+      
+      
+      }
+
+      .articleimg{
+        margin-right: 10px;
+      }
+      
+      .articleimg img{
+      width: 100%;
+      padding: 0;
+      }
+      
+        
+      
+      
+
+      .footer1{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footerlogo,.footercontent,.footersocial,.footerphone{
+        width: 100%;
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+      }
+
+      .footer2{
+        text-align: center;
+      }
+
+
+  
+
+
+  }
+
+  
+
+
+ 
+/* 250 to 450 */
+
+  @media screen and (max-width:450px) and (min-width:250px){
+
+
+  
+ 
+    #container nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      font-size: 11px;
+      
+      }
+
+      .logo{
+        width: 100%;
+        height: 40px;
+        font-size: medium;
+        padding-top: 20px;
+        margin-left: 0;
+        font-size: 10px;
+      }
+
+
+      .logo img{
+        width: 20px;
+        height: 18px;
+      }
+      
+
+      .navlist{
+     padding-top: 25px;
+     padding-bottom: 25px;
+        width: 100%;
+        height: 60%;
+      }
+.navlist ul{
+    width: 100%;
+    height: 100%;
+}
+      .navlist ul li {
+        padding: 0;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+.indexheading{
+    font-size: 11px;
+    height: 200px;
+}
+
+
+.latestindex{
+    font-size: 9px;
+}
+      .cardrow{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      
+      .cards{
+        width: 90%;
+        height: 160px;
+        padding: 0;
+        margin:15px;
+      }
+
+      .articles{
+
+        padding-left: 0;
+      }
+      
+      
+      .article{
+       width: 100%;
+        padding: 0;
+      }
+      
+      .articleblog{
+        font-size: 10px;
+      margin-left: 0px;
+      margin-right: 3px;
+      
+      
+      }
+
+      .articleimg{
+        margin-right: 10px;
+      }
+      
+      .articleimg img{
+      width: 100%;
+      padding: 0;
+      }
+      
+        
+      
+      
+
+      .footer1{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footerlogo,.footercontent,.footersocial,.footerphone{
+        width: 100%;
+        font-size: 9px;
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+      }
+
+      .footer2{
+        text-align: center;
+        font-size: 9px;
+      }
+
+      .footerlogo a h3{
+        font-size: 9px;
+      }
+        .footerlogo a img{
+          width: 15px;
+          height: 15px;
+        }
+       
+.footersocial img{
+  width: 15px;
+}
+    }
+
+
+
+  /* 700 to 1024*/
+
+
+  @media screen  and (max-width:1024px) and (min-width:700px){
+.logo{
+   
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+}
+    .navlist{
+ 
+width: 70%;
+height: 100%;
+
+    }
+    .nav{
+    
+        height: 100%;
+        width: 100%;
+    }
+
+    .indexheading{
+        font-size:30px ;
+        height: 350px;
+    }
+   
+    .cards {
+        height: 150px;
+        font-size: 13px;
+    }
+
+    .carddate p{
+      font-size: 10px;
+    }
+
+
+    .article{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .articleimg {
+      margin-right: 10px;
+
+
+    }
+
+    .articleimg img{
+      width: 70%;
+      
+    }
+  
+.footerlogo img{
+    width: 30px;
+    height: 30px;
+}
+    .footerlogo a h3,.footercontent , .footerphone{
+        font-size:12px;
+    }
+
+    .footerphone{
+      width: 30%;
+    }
+
+  }
+
+
+
+
+  @media screen and (min-width:1400px){
+
+    #container{
+      font-size: 35px;
+      padding-top: 10px;
+ 
+    }
+
+    .logo img{
+      width: 50px;
+      height: 50px;
+  
+    }
+    .logo{
+      padding-top: 10px;
+    }
+
+    .logo a h3{
+      margin-left: 5px;
+    }
+
+    .indexheading{
+      height:600px ;
+    }
+   
+    .latestindex{
+      font-size: 30px;
+    }
+    
+    .cards{
+      height: 500px;
+      font-size: 40px;
+      width: 40%;
+    }
+    .carddate p{
+      font-size: 30px;
+    }
+
+    .article{
+      margin-bottom: 50px;
+     
+    }
+.articleimg {
+  height: auto;
+
+}
+
+.articleimg img{
+  width: 100%;
+  height:120px;
+}
+    .footerlogo a h3,.footercontent,.footerphone{
+      font-size: 30px;
+    }
+
+    .footer2{
+      font-size: 30px;
+    }
+
+    .footersocial img{
+      width:40px;
+      height:40px;
+margin: 20px;
+    }
+  }
